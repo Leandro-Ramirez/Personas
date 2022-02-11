@@ -11,8 +11,8 @@ namespace Forms
     internal class Estudiante : Persona
     {
         #region Variables Globales
-        string Carnet;
-        string Nivel;
+        private string Carnet;
+        private string Nivel;
         #endregion
 
         #region Get & Set

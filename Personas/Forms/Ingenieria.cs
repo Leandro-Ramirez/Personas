@@ -11,9 +11,9 @@ namespace Forms
     internal class Ingenieria : Universitario
     {
         #region Variables Globales
-        string NombreProyecto;
-        int HoraTotal;
-        int HoraCompletada;
+        private string NombreProyecto;
+        private int HoraTotal;
+        private int HoraCompletada;
         #endregion
 
         #region Get & Set
@@ -35,11 +35,23 @@ namespace Forms
         #endregion
 
         #region Public Ingenieria
-        public Ingenieria()
+        public Ingenieria(string Nombre, string Genero, string Carnet,
+            string Nivel, string Universidad, string Carrera, 
+            string MateriasInscrita, int Nota, string CUM,
+            string NombreProyecto, int HoraTotal, int HoraCompletada)
         {
-            NombreProyecto = string.Empty;
-            HoraTotal = 0;
-            HoraCompletada = 0;
+            this.Nombres = Nombre ;
+            this.Generos = Genero ;
+            this.Carnets = Carnet ;
+            this.Niveles = Nivel ;
+            this.Universidades = Universidad ;
+            this.Carreras = Carrera ;
+            this.MateriasInscritas = MateriasInscrita ;
+            this.Notas = Nota ;
+            this.CUMs = CUM ;
+            this.NombreProyectos = NombreProyecto;
+            this.HoraTotales = HoraTotal;
+            this.HoraCompletadas = HoraCompletada;
         }
         #endregion
     }

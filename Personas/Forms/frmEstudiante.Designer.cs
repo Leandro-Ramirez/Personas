@@ -43,9 +43,7 @@
             this.dgvPersona = new System.Windows.Forms.DataGridView();
             this.txtCarnet = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtApellido = new System.Windows.Forms.TextBox();
-            this.txtUniversidad = new System.Windows.Forms.TextBox();
-            this.cmb = new System.Windows.Forms.ComboBox();
+            this.cmbNivel = new System.Windows.Forms.ComboBox();
             this.cmbCarrera = new System.Windows.Forms.ComboBox();
             this.cmbMaterias = new System.Windows.Forms.ComboBox();
             this.txtNotas = new System.Windows.Forms.TextBox();
@@ -55,6 +53,9 @@
             this.txtHoraC = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnMostrar = new System.Windows.Forms.Button();
+            this.cmbGenero = new System.Windows.Forms.ComboBox();
+            this.cmbUniversidad = new System.Windows.Forms.ComboBox();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersona)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             // 
             this.lblCarnet.AutoSize = true;
             this.lblCarnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCarnet.Location = new System.Drawing.Point(74, 99);
+            this.lblCarnet.Location = new System.Drawing.Point(355, 14);
             this.lblCarnet.Name = "lblCarnet";
             this.lblCarnet.Size = new System.Drawing.Size(100, 16);
             this.lblCarnet.TabIndex = 0;
@@ -72,7 +73,7 @@
             // 
             this.lblNivel.AutoSize = true;
             this.lblNivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNivel.Location = new System.Drawing.Point(40, 127);
+            this.lblNivel.Location = new System.Drawing.Point(321, 42);
             this.lblNivel.Name = "lblNivel";
             this.lblNivel.Size = new System.Drawing.Size(134, 16);
             this.lblNivel.TabIndex = 1;
@@ -82,7 +83,7 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(112, 15);
+            this.lblNombre.Location = new System.Drawing.Point(20, 42);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(62, 15);
             this.lblNombre.TabIndex = 2;
@@ -92,17 +93,17 @@
             // 
             this.lblApellido.AutoSize = true;
             this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellido.Location = new System.Drawing.Point(104, 43);
+            this.lblApellido.Location = new System.Drawing.Point(12, 70);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(70, 16);
+            this.lblApellido.Size = new System.Drawing.Size(63, 16);
             this.lblApellido.TabIndex = 3;
-            this.lblApellido.Text = "Apellido:";
+            this.lblApellido.Text = "Genero:";
             // 
             // lblUniversidad
             // 
             this.lblUniversidad.AutoSize = true;
             this.lblUniversidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUniversidad.Location = new System.Drawing.Point(87, 187);
+            this.lblUniversidad.Location = new System.Drawing.Point(620, 10);
             this.lblUniversidad.Name = "lblUniversidad";
             this.lblUniversidad.Size = new System.Drawing.Size(87, 15);
             this.lblUniversidad.TabIndex = 4;
@@ -112,7 +113,7 @@
             // 
             this.lblCarrera.AutoSize = true;
             this.lblCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCarrera.Location = new System.Drawing.Point(110, 215);
+            this.lblCarrera.Location = new System.Drawing.Point(643, 40);
             this.lblCarrera.Name = "lblCarrera";
             this.lblCarrera.Size = new System.Drawing.Size(64, 16);
             this.lblCarrera.TabIndex = 5;
@@ -122,7 +123,7 @@
             // 
             this.lblMaterias.AutoSize = true;
             this.lblMaterias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaterias.Location = new System.Drawing.Point(40, 245);
+            this.lblMaterias.Location = new System.Drawing.Point(573, 70);
             this.lblMaterias.Name = "lblMaterias";
             this.lblMaterias.Size = new System.Drawing.Size(134, 16);
             this.lblMaterias.TabIndex = 6;
@@ -132,7 +133,7 @@
             // 
             this.lblNotas.AutoSize = true;
             this.lblNotas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotas.Location = new System.Drawing.Point(121, 275);
+            this.lblNotas.Location = new System.Drawing.Point(654, 100);
             this.lblNotas.Name = "lblNotas";
             this.lblNotas.Size = new System.Drawing.Size(53, 16);
             this.lblNotas.TabIndex = 7;
@@ -142,7 +143,7 @@
             // 
             this.lblCUM.AutoSize = true;
             this.lblCUM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCUM.Location = new System.Drawing.Point(129, 303);
+            this.lblCUM.Location = new System.Drawing.Point(662, 128);
             this.lblCUM.Name = "lblCUM";
             this.lblCUM.Size = new System.Drawing.Size(45, 16);
             this.lblCUM.TabIndex = 8;
@@ -152,7 +153,7 @@
             // 
             this.lblProyecto.AutoSize = true;
             this.lblProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProyecto.Location = new System.Drawing.Point(13, 359);
+            this.lblProyecto.Location = new System.Drawing.Point(892, 14);
             this.lblProyecto.Name = "lblProyecto";
             this.lblProyecto.Size = new System.Drawing.Size(161, 16);
             this.lblProyecto.TabIndex = 9;
@@ -162,7 +163,7 @@
             // 
             this.lblHorasT.AutoSize = true;
             this.lblHorasT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHorasT.Location = new System.Drawing.Point(63, 387);
+            this.lblHorasT.Location = new System.Drawing.Point(942, 42);
             this.lblHorasT.Name = "lblHorasT";
             this.lblHorasT.Size = new System.Drawing.Size(111, 16);
             this.lblHorasT.TabIndex = 10;
@@ -172,7 +173,7 @@
             // 
             this.lblHoraC.AutoSize = true;
             this.lblHoraC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoraC.Location = new System.Drawing.Point(24, 415);
+            this.lblHoraC.Location = new System.Drawing.Point(903, 70);
             this.lblHoraC.Name = "lblHoraC";
             this.lblHoraC.Size = new System.Drawing.Size(150, 16);
             this.lblHoraC.TabIndex = 11;
@@ -181,15 +182,15 @@
             // dgvPersona
             // 
             this.dgvPersona.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPersona.Location = new System.Drawing.Point(286, 12);
+            this.dgvPersona.Location = new System.Drawing.Point(12, 158);
             this.dgvPersona.Name = "dgvPersona";
-            this.dgvPersona.Size = new System.Drawing.Size(375, 500);
+            this.dgvPersona.Size = new System.Drawing.Size(1160, 291);
             this.dgvPersona.TabIndex = 12;
             // 
             // txtCarnet
             // 
             this.txtCarnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCarnet.Location = new System.Drawing.Point(180, 96);
+            this.txtCarnet.Location = new System.Drawing.Point(461, 11);
             this.txtCarnet.Name = "txtCarnet";
             this.txtCarnet.Size = new System.Drawing.Size(100, 22);
             this.txtCarnet.TabIndex = 13;
@@ -197,45 +198,41 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(180, 12);
+            this.txtNombre.Location = new System.Drawing.Point(88, 39);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 22);
+            this.txtNombre.Size = new System.Drawing.Size(150, 22);
             this.txtNombre.TabIndex = 14;
             // 
-            // txtApellido
+            // cmbNivel
             // 
-            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellido.Location = new System.Drawing.Point(180, 40);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(100, 22);
-            this.txtApellido.TabIndex = 15;
-            // 
-            // txtUniversidad
-            // 
-            this.txtUniversidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUniversidad.Location = new System.Drawing.Point(180, 184);
-            this.txtUniversidad.Name = "txtUniversidad";
-            this.txtUniversidad.Size = new System.Drawing.Size(100, 22);
-            this.txtUniversidad.TabIndex = 16;
-            // 
-            // cmb
-            // 
-            this.cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb.FormattingEnabled = true;
-            this.cmb.Location = new System.Drawing.Point(180, 124);
-            this.cmb.Name = "cmb";
-            this.cmb.Size = new System.Drawing.Size(100, 24);
-            this.cmb.TabIndex = 17;
+            this.cmbNivel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbNivel.FormattingEnabled = true;
+            this.cmbNivel.Items.AddRange(new object[] {
+            "Basico",
+            "Intermedio",
+            "Avanzado",
+            "Experto",
+            "Profesional"});
+            this.cmbNivel.Location = new System.Drawing.Point(461, 39);
+            this.cmbNivel.Name = "cmbNivel";
+            this.cmbNivel.Size = new System.Drawing.Size(100, 24);
+            this.cmbNivel.TabIndex = 17;
             // 
             // cmbCarrera
             // 
             this.cmbCarrera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCarrera.FormattingEnabled = true;
-            this.cmbCarrera.Location = new System.Drawing.Point(180, 212);
+            this.cmbCarrera.Items.AddRange(new object[] {
+            "IngenieriaComputacion",
+            "IngenieriaElectrica",
+            "IngenieriaIndustrial",
+            "IngenieriaMecanica",
+            "IngenieriaQuimica"});
+            this.cmbCarrera.Location = new System.Drawing.Point(713, 37);
             this.cmbCarrera.Name = "cmbCarrera";
-            this.cmbCarrera.Size = new System.Drawing.Size(100, 24);
+            this.cmbCarrera.Size = new System.Drawing.Size(165, 24);
             this.cmbCarrera.TabIndex = 18;
             // 
             // cmbMaterias
@@ -243,15 +240,24 @@
             this.cmbMaterias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMaterias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMaterias.FormattingEnabled = true;
-            this.cmbMaterias.Location = new System.Drawing.Point(180, 242);
+            this.cmbMaterias.Items.AddRange(new object[] {
+            "AlgebraLineal",
+            "Calculo",
+            "Contabilidad",
+            "Filosofia",
+            "Ingles",
+            "Programacion",
+            "RedaccionTecnica",
+            "Sociologia"});
+            this.cmbMaterias.Location = new System.Drawing.Point(713, 67);
             this.cmbMaterias.Name = "cmbMaterias";
-            this.cmbMaterias.Size = new System.Drawing.Size(100, 24);
+            this.cmbMaterias.Size = new System.Drawing.Size(140, 24);
             this.cmbMaterias.TabIndex = 19;
             // 
             // txtNotas
             // 
             this.txtNotas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNotas.Location = new System.Drawing.Point(180, 272);
+            this.txtNotas.Location = new System.Drawing.Point(713, 97);
             this.txtNotas.Name = "txtNotas";
             this.txtNotas.Size = new System.Drawing.Size(100, 22);
             this.txtNotas.TabIndex = 20;
@@ -259,7 +265,7 @@
             // txtCUM
             // 
             this.txtCUM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCUM.Location = new System.Drawing.Point(180, 300);
+            this.txtCUM.Location = new System.Drawing.Point(713, 125);
             this.txtCUM.Name = "txtCUM";
             this.txtCUM.Size = new System.Drawing.Size(100, 22);
             this.txtCUM.TabIndex = 21;
@@ -267,7 +273,7 @@
             // txtProyecto
             // 
             this.txtProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProyecto.Location = new System.Drawing.Point(180, 356);
+            this.txtProyecto.Location = new System.Drawing.Point(1059, 11);
             this.txtProyecto.Name = "txtProyecto";
             this.txtProyecto.Size = new System.Drawing.Size(100, 22);
             this.txtProyecto.TabIndex = 22;
@@ -275,7 +281,7 @@
             // txtHoraT
             // 
             this.txtHoraT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoraT.Location = new System.Drawing.Point(180, 384);
+            this.txtHoraT.Location = new System.Drawing.Point(1059, 39);
             this.txtHoraT.Name = "txtHoraT";
             this.txtHoraT.Size = new System.Drawing.Size(100, 22);
             this.txtHoraT.TabIndex = 23;
@@ -283,7 +289,7 @@
             // txtHoraC
             // 
             this.txtHoraC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoraC.Location = new System.Drawing.Point(180, 412);
+            this.txtHoraC.Location = new System.Drawing.Point(1059, 67);
             this.txtHoraC.Name = "txtHoraC";
             this.txtHoraC.Size = new System.Drawing.Size(100, 22);
             this.txtHoraC.TabIndex = 24;
@@ -292,29 +298,74 @@
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.Green;
-            this.btnRegistrar.Location = new System.Drawing.Point(74, 482);
+            this.btnRegistrar.Location = new System.Drawing.Point(12, 122);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(100, 30);
             this.btnRegistrar.TabIndex = 25;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // btnMostrar
             // 
             this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMostrar.ForeColor = System.Drawing.Color.Blue;
-            this.btnMostrar.Location = new System.Drawing.Point(180, 482);
+            this.btnMostrar.Location = new System.Drawing.Point(118, 122);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(100, 30);
             this.btnMostrar.TabIndex = 26;
             this.btnMostrar.Text = "Mostrar";
             this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.BtnMostrar_Click);
+            // 
+            // cmbGenero
+            // 
+            this.cmbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGenero.FormattingEnabled = true;
+            this.cmbGenero.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino",
+            "HelicopteroApacheDeCombate"});
+            this.cmbGenero.Location = new System.Drawing.Point(88, 67);
+            this.cmbGenero.Name = "cmbGenero";
+            this.cmbGenero.Size = new System.Drawing.Size(220, 24);
+            this.cmbGenero.TabIndex = 27;
+            // 
+            // cmbUniversidad
+            // 
+            this.cmbUniversidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUniversidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbUniversidad.FormattingEnabled = true;
+            this.cmbUniversidad.Items.AddRange(new object[] {
+            "UCA",
+            "UNAN",
+            "UNI"});
+            this.cmbUniversidad.Location = new System.Drawing.Point(713, 7);
+            this.cmbUniversidad.Name = "cmbUniversidad";
+            this.cmbUniversidad.Size = new System.Drawing.Size(75, 24);
+            this.cmbUniversidad.TabIndex = 28;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.Red;
+            this.btnSalir.Location = new System.Drawing.Point(224, 121);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(100, 30);
+            this.btnSalir.TabIndex = 29;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // frmEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 525);
+            this.ClientSize = new System.Drawing.Size(1184, 461);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.cmbUniversidad);
+            this.Controls.Add(this.cmbGenero);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtHoraC);
@@ -324,9 +375,7 @@
             this.Controls.Add(this.txtNotas);
             this.Controls.Add(this.cmbMaterias);
             this.Controls.Add(this.cmbCarrera);
-            this.Controls.Add(this.cmb);
-            this.Controls.Add(this.txtUniversidad);
-            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.cmbNivel);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtCarnet);
             this.Controls.Add(this.dgvPersona);
@@ -367,9 +416,7 @@
         private System.Windows.Forms.DataGridView dgvPersona;
         private System.Windows.Forms.TextBox txtCarnet;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.TextBox txtUniversidad;
-        private System.Windows.Forms.ComboBox cmb;
+        private System.Windows.Forms.ComboBox cmbNivel;
         private System.Windows.Forms.ComboBox cmbCarrera;
         private System.Windows.Forms.ComboBox cmbMaterias;
         private System.Windows.Forms.TextBox txtNotas;
@@ -379,6 +426,9 @@
         private System.Windows.Forms.TextBox txtHoraC;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.ComboBox cmbGenero;
+        private System.Windows.Forms.ComboBox cmbUniversidad;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 

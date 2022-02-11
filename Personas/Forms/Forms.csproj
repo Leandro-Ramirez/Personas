@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enumeradores\Carreras.cs" />
+    <Compile Include="Enumeradores\Genero.cs" />
+    <Compile Include="Enumeradores\Materias.cs" />
+    <Compile Include="Enumeradores\Niveles.cs" />
     <Compile Include="Estudiante.cs" />
     <Compile Include="frmEstudiante.cs">
       <SubType>Form</SubType>

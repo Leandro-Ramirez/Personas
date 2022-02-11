@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace Forms
 {
-    internal class Universitario : Estudiante 
+    internal class Universitario : Estudiante
     {
         #region Variables Globales
-        string Universidad;
-        string Carrera;
-        string MateriasInscrita;
-        int Nota;
-        string CUM;
+        private string Universidad;
+        private string Carrera;
+        private string MateriasInscrita;
+        private int Nota;
+        private string CUM;
         #endregion
 
         #region Get & Set

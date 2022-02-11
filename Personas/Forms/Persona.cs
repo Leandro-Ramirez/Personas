@@ -11,8 +11,8 @@ namespace Forms
     internal class Persona
     {
         #region Variables Globales
-        string Nombre;
-        string Apellido;
+        private string Nombre;
+        private string Genero;
         #endregion
 
         #region Get & Set
@@ -21,10 +21,10 @@ namespace Forms
             get => Nombre;
             set => Nombre = value;
         }
-        public string Apellidos
+        public string Generos
         {
-            get => Apellido;
-            set => Apellido = value;
+            get => Genero;
+            set => Genero = value;
         }
         #endregion
 
@@ -32,7 +32,7 @@ namespace Forms
         public Persona()
         {
             Nombre = string.Empty;
-            Apellido = string.Empty;
+            Genero = string.Empty;
         }
         #endregion
     }

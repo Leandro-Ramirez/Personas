@@ -1,0 +1,10 @@
+C:\Users\JADPA03\Downloads\Personas\Forms\bin\Debug\Forms.exe.config
+C:\Users\JADPA03\Downloads\Personas\Forms\bin\Debug\Forms.exe
+C:\Users\JADPA03\Downloads\Personas\Forms\bin\Debug\Forms.pdb
+C:\Users\JADPA03\Downloads\Personas\Forms\obj\Debug\Forms.csprojAssemblyReference.cache
+C:\Users\JADPA03\Downloads\Personas\Forms\obj\Debug\Forms.frmEstudiante.resources
+C:\Users\JADPA03\Downloads\Personas\Forms\obj\Debug\Forms.Properties.Resources.resources
+C:\Users\JADPA03\Downloads\Personas\Forms\obj\Debug\Forms.csproj.GenerateResource.cache
+C:\Users\JADPA03\Downloads\Personas\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
+C:\Users\JADPA03\Downloads\Personas\Forms\obj\Debug\Forms.exe
+C:\Users\JADPA03\Downloads\Personas\Forms\obj\Debug\Forms.pdb
